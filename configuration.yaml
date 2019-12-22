@@ -1,0 +1,33 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+homeassistant:
+  customize: !include customize.yaml
+
+lovelace:
+  mode: yaml
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+zwave:
+  usb_path: /dev/ttyACM0
+  device_config: !include zwave_device_config.yaml
+
+mysensors:
+  gateways:
+    - device: '/dev/ttyUSB1'
+      persistence_file: 'mysensors-gateway-1.json'
+      nodes:
+        0:
+          name: 'lights1'

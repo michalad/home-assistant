@@ -1,0 +1,32 @@
+title: Mieszkanie
+views:
+  - badges:
+      - entity: binary_sensor.updater
+      - entity: person.michal
+      - entity: sun.sun
+    cards:
+      - entity: media_player.kdl_43w755c
+        type: media-control
+      - entities:
+          - switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch
+          - switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
+          - switch.lights1_2
+          - switch.lights1_1
+          - switch.lights1_3
+        title: Wszystkie światła2
+        type: entities
+      - entity: weather.mieszkanie
+        type: weather-forecast
+    path: default_view
+    title: Home
+  - badges: []
+    cards:
+      - type: entity-button
+        name: Choinka
+        entity: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch
+        icon: mdi:pine-tree
+      - type: entity-button
+        name: Regał
+        entity: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
+        icon: mdi:wardrobe
+    title: Salon
