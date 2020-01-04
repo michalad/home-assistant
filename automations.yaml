@@ -1,1 +1,24 @@
-[]
+- id: '1578161087836'
+  alias: Wyłącz choinke
+  description: ''
+  trigger:
+  - at: '23:02'
+    platform: time
+  condition: []
+  action:
+  - device_id: b0939001fa8447dba8f7bc4409c3d844
+    domain: switch
+    entity_id: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch
+    type: turn_off
+- id: '1578162711347'
+  alias: Włącz choinke
+  description: ''
+  trigger:
+  - event: sunset
+    platform: sun
+  condition: []
+  action:
+  - device_id: b0939001fa8447dba8f7bc4409c3d844
+    domain: switch
+    entity_id: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch
+    type: turn_on
