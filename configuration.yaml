@@ -19,6 +19,7 @@ lovelace:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+switch: !include switch.yaml
 
 zwave:
   usb_path: /dev/ttyACM0
@@ -26,8 +27,16 @@ zwave:
 
 mysensors:
   gateways:
-    - device: '/dev/ttyUSB1'
+    - device: '/dev/ttyUSB0'
       persistence_file: 'mysensors-gateway-1.json'
       nodes:
         0:
           name: 'lights1'
+
+mqtt:
+  broker: localhost
+  protocol: 3.1.1
+  keepalive: 60
+  client_id: dom-1
+  username: mqtt
+  password: mqtt

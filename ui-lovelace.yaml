@@ -13,6 +13,9 @@ views:
           - switch.lights1_2
           - switch.lights1_1
           - switch.lights1_3
+          - switch.lights1_4
+          - switch.lamp
+          - switch.regal
         title: Wszystkie światła2
         type: entities
       - entity: weather.mieszkanie

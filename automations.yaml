@@ -18,8 +18,6 @@
   trigger:
   - event: sunset
     platform: sun
-  - at: '7:00'
-    platform: time
   condition: []
   action:
   - device_id: b0939001fa8447dba8f7bc4409c3d844

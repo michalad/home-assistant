@@ -1,0 +1,19 @@
+- platform: mqtt
+  name: "lamp"
+  state_topic: "/smart-item-1/socket-1/state"
+  command_topic: "/smart-item-1/socket-1/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "regal"
+  state_topic: "/smart-item-1/socket-2/state"
+  command_topic: "/smart-item-1/socket-2/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
