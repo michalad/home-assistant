@@ -33,3 +33,34 @@ views:
         entity: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
         icon: mdi:wardrobe
     title: Salon
+  - badges: []
+    cards:
+      - type: entities
+        title: Oswietlenie
+        entities:
+            - entity: switch.lights1_0
+              name: Światło 0
+            - switch.lights1_1
+            - switch.lights1_2
+            - switch.lights1_3
+            - switch.lights1_4
+            - switch.lights1_5
+            - switch.lights1_6
+            - switch.lights1_7
+            - switch.lights1_8
+            - switch.lights1_9
+            - switch.lights1_10
+            - switch.lights1_11
+            - switch.lights1_12
+            - switch.lights1_13
+            - switch.lights1_14
+            - switch.lights1_15
+            - switch.lights1_16
+            - switch.lights1_17
+            - switch.lights1_18
+            - switch.lights1_19
+            - switch.lights1_20
+            - switch.lights1_21
+            - switch.lights1_22
+            - switch.lights1_23                         
+    title: Dom
