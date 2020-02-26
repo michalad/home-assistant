@@ -1,5 +1,5 @@
 - id: '1578161087836'
-  alias: Wyłącz choinke
+  alias: Wyącz lampę
   description: ''
   trigger:
   - at: '23:02'
@@ -10,10 +10,10 @@
   action:
   - device_id: b0939001fa8447dba8f7bc4409c3d844
     domain: switch
-    entity_id: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch
+    entity_id: switch.lamp
     type: turn_off
 - id: '1578162711347'
-  alias: Włącz choinke
+  alias: Włącz lampę
   description: ''
   trigger:
   - event: sunset
@@ -22,5 +22,5 @@
   action:
   - device_id: b0939001fa8447dba8f7bc4409c3d844
     domain: switch
-    entity_id: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch
+    entity_id: switch.lamp
     type: turn_on

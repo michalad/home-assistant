@@ -21,9 +21,9 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 switch: !include switch.yaml
 
-zwave:
-  usb_path: /dev/ttyACM0
-  device_config: !include zwave_device_config.yaml
+#zwave:
+#  usb_path: /dev/ttyACM0
+#  device_config: !include zwave_device_config.yaml
 
 mysensors:
   gateways:

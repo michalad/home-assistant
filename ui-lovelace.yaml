@@ -8,13 +8,10 @@ views:
       - entity: media_player.kdl_43w755c
         type: media-control
       - entities:
-          - switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch
-          - switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
-          - switch.lights1_2
-          - switch.lights1_1
-          - switch.lights1_3
-          - switch.lights1_4
-          - switch.lamp
+#          - switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch
+#          - switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
+          - entity: switch.lamp
+            name: Lampa
           - switch.regal
         title: Wszystkie światła2
         type: entities

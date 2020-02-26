@@ -1,5 +1,5 @@
 - platform: mqtt
-  name: "lamp"
+  name: "regal"
   state_topic: "/smart-item-1/socket-1/state"
   command_topic: "/smart-item-1/socket-1/cmd"
   optimistic: true
@@ -9,11 +9,11 @@
   retain: true
 
 - platform: mqtt
-  name: "regal"
-  state_topic: "/smart-item-1/socket-2/state"
-  command_topic: "/smart-item-1/socket-2/cmd"
+  name: "lamp"
+  state_topic: "stat/wallplug-1/POWER"
+  command_topic: "cmnd/wallplug-1/POWER"
   optimistic: true
-  payload_on: "on"
-  payload_off: "off"
+  payload_on: "ON"
+  payload_off: "OFF"
   qos: 1
   retain: true
