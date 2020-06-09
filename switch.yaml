@@ -9,6 +9,46 @@
   retain: true
 
 - platform: mqtt
+  name: "test14"
+  state_topic: "/mqtt-gateway-1/heating-14/state"
+  command_topic: "/mqtt-gateway-1/heating-14/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "test15"
+  state_topic: "/mqtt-gateway-1/heating-15/state"
+  command_topic: "/mqtt-gateway-1/heating-15/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "test16"
+  state_topic: "/mqtt-gateway-1/heating-16/state"
+  command_topic: "/mqtt-gateway-1/heating-16/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "test17"
+  state_topic: "/mqtt-gateway-1/heating-17/state"
+  command_topic: "/mqtt-gateway-1/heating-17/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
   name: "lamp"
   state_topic: "stat/wallplug-1/POWER"
   command_topic: "cmnd/wallplug-1/POWER"

@@ -20,6 +20,7 @@ group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 switch: !include switch.yaml
+sensor: !include sensor.yaml
 
 #zwave:
 #  usb_path: /dev/ttyACM0
@@ -27,11 +28,30 @@ switch: !include switch.yaml
 
 mysensors:
   gateways:
-    - device: '/dev/ttyACM1'
+    - device: '/dev/ttyACM0'
       persistence_file: 'mysensors-gateway-1.json'
       nodes:
         0:
           name: 'lights1'
+
+climate:
+  - platform: generic_thermostat
+    name: garage
+    heater: switch.test14
+    target_sensor: sensor.garagetemp
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "off"
+    away_temp: 16
+    precision: 0.1
 
 mqtt:
   broker: localhost

@@ -1,0 +1,5 @@
+- platform: mqtt
+  state_topic: "/mqtt-gateway-1/temp-1"
+  name: "garagetemp"
+  unit_of_measurement: '°C'
+  value_template: "{{ value_json.temperature }}"

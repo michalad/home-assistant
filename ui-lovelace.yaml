@@ -8,11 +8,10 @@ views:
       - entity: media_player.kdl_43w755c
         type: media-control
       - entities:
-#          - switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch
-#          - switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
           - entity: switch.lamp
             name: Lampa
           - switch.regal
+          - switch.test
         title: Wszystkie światła2
         type: entities
       - entity: weather.mieszkanie
@@ -21,15 +20,22 @@ views:
     title: Home
   - badges: []
     cards:
-      - type: entity-button
-        name: Choinka
-        entity: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch
-        icon: mdi:pine-tree
-      - type: entity-button
-        name: Regał
-        entity: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
-        icon: mdi:wardrobe
-    title: Salon
+      - entity: sensor.garagetemp
+        type: sensor
+      - entity: climate.garage
+        type: thermostat
+      - entities:
+          - entity: switch.test14
+            name: Ogrzewanie garaż
+          - entity: switch.test15
+            name: Ogrzewanie salon
+          - entity: switch.test16
+            name: Ogrzewanie kuchnia
+          - entity: switch.test17
+            name: Ogrzewanie sypialnia
+        title: Ogrzewanie
+        type: entities
+    title: Parter
   - badges: []
     cards:
       - type: entities
