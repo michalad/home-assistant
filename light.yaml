@@ -1,0 +1,49 @@
+- platform: mqtt
+  name: "lr1"
+  state_topic: "/mqtt-gateway-2/light-1/state"
+  command_topic: "/mqtt-gateway-2/light-1/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "lr2"
+  state_topic: "/mqtt-gateway-2/light-2/state"
+  command_topic: "/mqtt-gateway-2/light-2/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "lr3"
+  state_topic: "/mqtt-gateway-2/light-3/state"
+  command_topic: "/mqtt-gateway-2/light-3/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "lr4"
+  state_topic: "/mqtt-gateway-2/light-4/state"
+  command_topic: "/mqtt-gateway-2/light-4/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "lamp"
+  state_topic: "stat/wallplug-1/POWER"
+  command_topic: "cmnd/wallplug-1/POWER"
+  optimistic: true
+  payload_on: "ON"
+  payload_off: "OFF"
+  qos: 1
+  retain: true

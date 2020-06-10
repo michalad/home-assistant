@@ -1,0 +1,18 @@
+    title: Parter
+    cards:
+      - entities:
+          - entity: light.lr1
+            name: Salon 1
+          - entity: light.lr2
+            name: Salon 2
+          - entity: light.lr3
+            name: Salon 3
+          - entity: light.lr4
+            name: Salon 4
+          - entity: climate.livingroomwindows
+            name: Temperatura przy oknach
+          - entity: climate.livingroomkitchen
+            name: Temperatura przy kuchni
+        title: Salon
+        type: entities  
+    

@@ -1,0 +1,8 @@
+title: Piętro
+cards:
+  - type: entities
+    title: Oswietlenie
+    entities:
+      - entity: switch.lights1_0
+        name: Światło 0
+      - switch.lights1_1                         

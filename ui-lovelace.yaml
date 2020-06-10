@@ -1,69 +1,8 @@
-title: Mieszkanie
+title: Nasz dom
 views:
-  - badges:
-      - entity: binary_sensor.updater
-      - entity: person.michal
-      - entity: sun.sun
-    cards:
-      - entity: media_player.kdl_43w755c
-        type: media-control
-      - entities:
-          - entity: switch.lamp
-            name: Lampa
-          - switch.regal
-          - switch.test
-        title: Wszystkie światła2
-        type: entities
-      - entity: weather.mieszkanie
-        type: weather-forecast
-    path: default_view
-    title: Home
-  - badges: []
-    cards:
-      - entity: sensor.garagetemp
-        type: sensor
-      - entity: climate.garage
-        type: thermostat
-      - entities:
-          - entity: switch.test14
-            name: Ogrzewanie garaż
-          - entity: switch.test15
-            name: Ogrzewanie salon
-          - entity: switch.test16
-            name: Ogrzewanie kuchnia
-          - entity: switch.test17
-            name: Ogrzewanie sypialnia
-        title: Ogrzewanie
-        type: entities
-    title: Parter
-  - badges: []
-    cards:
-      - type: entities
-        title: Oswietlenie
-        entities:
-            - entity: switch.lights1_0
-              name: Światło 0
-            - switch.lights1_1
-            - switch.lights1_2
-            - switch.lights1_3
-            - switch.lights1_4
-            - switch.lights1_5
-            - switch.lights1_6
-            - switch.lights1_7
-            - switch.lights1_8
-            - switch.lights1_9
-            - switch.lights1_10
-            - switch.lights1_11
-            - switch.lights1_12
-            - switch.lights1_13
-            - switch.lights1_14
-            - switch.lights1_15
-            - switch.lights1_16
-            - switch.lights1_17
-            - switch.lights1_18
-            - switch.lights1_19
-            - switch.lights1_20
-            - switch.lights1_21
-            - switch.lights1_22
-            - switch.lights1_23                         
-    title: Dom
+  - !include ui/main.yaml
+  - !include ui/ground.yaml
+  - !include ui/first-floor.yaml
+  - !include ui/heating.yaml
+
+  

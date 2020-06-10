@@ -12,6 +12,11 @@ tts:
 
 homeassistant:
   customize: !include customize.yaml
+  customize_domain:
+    light:
+      assumed_state: false
+    switch:
+      assumed_state: false
 
 lovelace:
   mode: yaml
@@ -21,42 +26,13 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 switch: !include switch.yaml
 sensor: !include sensor.yaml
-
-#zwave:
-#  usb_path: /dev/ttyACM0
-#  device_config: !include zwave_device_config.yaml
-
-mysensors:
-  gateways:
-    - device: '/dev/ttyACM0'
-      persistence_file: 'mysensors-gateway-1.json'
-      nodes:
-        0:
-          name: 'lights1'
-
-climate:
-  - platform: generic_thermostat
-    name: garage
-    heater: switch.test14
-    target_sensor: sensor.garagetemp
-    min_temp: 15
-    max_temp: 30
-    ac_mode: false
-    target_temp: 21
-    cold_tolerance: 0.5
-    hot_tolerance: 0.5
-    min_cycle_duration:
-      seconds: 5
-    keep_alive:
-      minutes: 3
-    initial_hvac_mode: "off"
-    away_temp: 16
-    precision: 0.1
+climate: !include climate.yaml
+light: !include light.yaml
 
 mqtt:
-  broker: localhost
+  broker: 192.168.0.20
   protocol: 3.1.1
   keepalive: 60
-  client_id: dom-1
+  client_id: dom-prd
   username: mqtt
   password: mqtt

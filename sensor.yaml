@@ -3,3 +3,15 @@
   name: "garagetemp"
   unit_of_measurement: '°C'
   value_template: "{{ value_json.temperature }}"
+
+- platform: mqtt
+  state_topic: "/mqtt-gateway-1/temp-2"
+  name: "livingroomwindowstemp"
+  unit_of_measurement: '°C'
+  value_template: "{{ value_json.temperature }}"
+
+- platform: mqtt
+  state_topic: "/mqtt-gateway-1/temp-3"
+  name: "livingroomkitchentemp"
+  unit_of_measurement: '°C'
+  value_template: "{{ value_json.temperature }}"
