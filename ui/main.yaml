@@ -1,16 +1,8 @@
     title: Ogólne
     badges: []
     cards:
-      - entity: media_player.kdl_43w755c
-        type: media-control
-      - entities:
-          - entity: switch.lamp
-            name: Lampa
-          - switch.regal
-          - switch.test
-        title: Wszystkie światła2
-        type: entities
-      - entity: weather.mieszkanie
+      - entity: weather.openweathermap
         type: weather-forecast
+        name: Pogoda w Miechowie
     path: default_view
     

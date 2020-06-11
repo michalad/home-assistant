@@ -10,7 +10,17 @@ default_config:
 tts:
   - platform: google_translate
 
+weather:
+  - platform: openweathermap
+    api_key: !secret openweathermap_password
+
 homeassistant:
+  name: Nasz Dom
+  latitude: 50.348172
+  longitude: 20.046405
+  elevation: 300
+  unit_system: metric
+  time_zone: Europe/Warsaw
   customize: !include customize.yaml
   customize_domain:
     light:
