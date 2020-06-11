@@ -15,4 +15,39 @@
             name: Temperatura przy kuchni
         title: Salon
         type: entities  
-    
+      - entities:
+          - entity: light.unassigned5
+            name: Kuchnia
+          - entity: light.unassigned6
+            name: Wyspa
+          - entity: climate.todo
+            name: Temperatura
+        title: Kuchnia
+        type: entities  
+      - entities:
+          - entity: light.unassigned7
+            name: Łazienka
+          - entity: light.unassigned8
+            name: Lustro
+          - entity: climate.todo
+            name: Temperatura
+        title: Łazienka
+        type: entities  
+      - entities:
+          - entity: light.unassigned9
+            name: Garaz
+          - entity: climate.todo
+            name: Temperatura
+        title: Garaz
+        type: entities  
+      - entities:
+          - entity: light.unassigned10
+            name: Korytarz
+          - entity: light.unassigned11
+            name: Wiatrołap
+          - entity: light.unassigned12
+            name: Kinkiety
+          - entity: climate.todo
+            name: Temperatura
+        title: Korytarz
+        type: entities

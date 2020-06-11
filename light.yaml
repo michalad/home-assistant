@@ -39,6 +39,217 @@
   retain: true
 
 - platform: mqtt
+  name: "unassigned5"
+  state_topic: "/mqtt-gateway-2/light-5/state"
+  command_topic: "/mqtt-gateway-2/light-5/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned6"
+  state_topic: "/mqtt-gateway-2/light-6/state"
+  command_topic: "/mqtt-gateway-2/light-6/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned7"
+  state_topic: "/mqtt-gateway-2/light-7/state"
+  command_topic: "/mqtt-gateway-2/light-7/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned8"
+  state_topic: "/mqtt-gateway-2/light-8/state"
+  command_topic: "/mqtt-gateway-2/light-8/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned9"
+  state_topic: "/mqtt-gateway-2/light-9/state"
+  command_topic: "/mqtt-gateway-2/light-9/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned10"
+  state_topic: "/mqtt-gateway-2/light-10/state"
+  command_topic: "/mqtt-gateway-2/light-10/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned11"
+  state_topic: "/mqtt-gateway-2/light-11/state"
+  command_topic: "/mqtt-gateway-2/light-11/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned12"
+  state_topic: "/mqtt-gateway-2/light-12/state"
+  command_topic: "/mqtt-gateway-2/light-12/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned13"
+  state_topic: "/mqtt-gateway-2/light-13/state"
+  command_topic: "/mqtt-gateway-2/light-13/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned14"
+  state_topic: "/mqtt-gateway-2/light-14/state"
+  command_topic: "/mqtt-gateway-2/light-14/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned6"
+  state_topic: "/mqtt-gateway-2/light-6/state"
+  command_topic: "/mqtt-gateway-2/light-6/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned15"
+  state_topic: "/mqtt-gateway-2/light-15/state"
+  command_topic: "/mqtt-gateway-2/light-15/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned16"
+  state_topic: "/mqtt-gateway-2/light-16/state"
+  command_topic: "/mqtt-gateway-2/light-16/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+
+- platform: mqtt
+  name: "unassigned17"
+  state_topic: "/mqtt-gateway-2/light-17/state"
+  command_topic: "/mqtt-gateway-2/light-17/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned18"
+  state_topic: "/mqtt-gateway-2/light-18/state"
+  command_topic: "/mqtt-gateway-2/light-18/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned19"
+  state_topic: "/mqtt-gateway-2/light-19/state"
+  command_topic: "/mqtt-gateway-2/light-19/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned20"
+  state_topic: "/mqtt-gateway-2/light-20/state"
+  command_topic: "/mqtt-gateway-2/light-20/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned21"
+  state_topic: "/mqtt-gateway-2/light-21/state"
+  command_topic: "/mqtt-gateway-2/light-21/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned22"
+  state_topic: "/mqtt-gateway-2/light-22/state"
+  command_topic: "/mqtt-gateway-2/light-22/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned23"
+  state_topic: "/mqtt-gateway-2/light-23/state"
+  command_topic: "/mqtt-gateway-2/light-23/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "unassigned24"
+  state_topic: "/mqtt-gateway-2/light-24/state"
+  command_topic: "/mqtt-gateway-2/light-24/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
   name: "lamp"
   state_topic: "stat/wallplug-1/POWER"
   command_topic: "cmnd/wallplug-1/POWER"
