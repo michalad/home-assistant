@@ -25,16 +25,16 @@
         title: Kuchnia
         type: entities  
       - entities:
-          - entity: light.unassigned7
+          - entity: light.brground
             name: Łazienka
-          - entity: light.unassigned8
+          - entity: light.brgroundmirror
             name: Lustro
           - entity: climate.todo
             name: Temperatura
         title: Łazienka
         type: entities  
       - entities:
-          - entity: light.unassigned9
+          - entity: light.garage
             name: Garaz
           - entity: climate.todo
             name: Temperatura

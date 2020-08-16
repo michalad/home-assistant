@@ -3,6 +3,24 @@
     cards:
       - entity: weather.openweathermap
         type: weather-forecast
-        name: Pogoda w Miechowie
+        name: Pogoda w Miechowie 
+      - entity: camera.wjazd
+        type: picture-entity
+        show_name: false
+        show_state: false
+      - entity: sensor.pv_outputpower
+        type: gauge
+        min: 0
+        max: 12000
+        name: Fotowoltaika - aktualna produkcja
+      - entities:
+        - entity: sensor.pv_outputpower
+          name: Aktualna produkcja
+        - entity: sensor.pv_eday
+          name: Wyprodukowano dzisiaj
+        - entity: sensor.pv_etotal
+          name: Całkowita produkcja
+        title: Fotowoltaika
+        type: entities
     path: default_view
     

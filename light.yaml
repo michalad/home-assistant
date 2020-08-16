@@ -19,7 +19,7 @@
   retain: true
 
 - platform: mqtt
-  name: "lr3"
+  name: "garage"
   state_topic: "/mqtt-gateway-2/light-3/state"
   command_topic: "/mqtt-gateway-2/light-3/cmd"
   optimistic: true
@@ -79,7 +79,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned9"
+  name: "brground"
   state_topic: "/mqtt-gateway-2/light-9/state"
   command_topic: "/mqtt-gateway-2/light-9/cmd"
   optimistic: true
@@ -109,7 +109,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned12"
+  name: "brgroundmirror"
   state_topic: "/mqtt-gateway-2/light-12/state"
   command_topic: "/mqtt-gateway-2/light-12/cmd"
   optimistic: true

@@ -39,8 +39,13 @@ sensor: !include sensor.yaml
 climate: !include climate.yaml
 light: !include light.yaml
 
+camera:
+  - platform: ffmpeg
+    name: wjazd
+    input: rtsp://192.168.0.18:554
+
 mqtt:
-  broker: 192.168.0.20
+  broker: 192.168.100.151
   protocol: 3.1.1
   keepalive: 60
   client_id: dom-prd
