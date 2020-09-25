@@ -29,6 +29,9 @@
             name: Łazienka
           - entity: light.brgroundmirror
             name: Lustro
+          - entity: switch.heatingbathroomgroundwall
+            name: Ogrzewanie łazienka grzejnik (Parter)
+            icon: 'mdi:fire'
           - entity: climate.todo
             name: Temperatura
         title: Łazienka

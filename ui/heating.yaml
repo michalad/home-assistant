@@ -22,6 +22,9 @@
           - entity: switch.heatingbathroomground
             name: Ogrzewanie łazienka (Parter)
             icon: 'mdi:fire'
+          - entity: switch.heatingbathroomgroundwall
+            name: Ogrzewanie łazienka grzejnik (Parter)
+            icon: 'mdi:fire'
         title: Ogrzewanie
         type: entities
     
