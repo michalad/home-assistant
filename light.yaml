@@ -1,5 +1,5 @@
 - platform: mqtt
-  name: "lr1"
+  name: "gateway2light1"
   state_topic: "/mqtt-gateway-2/light-1/state"
   command_topic: "/mqtt-gateway-2/light-1/cmd"
   optimistic: true
@@ -9,7 +9,7 @@
   retain: true
 
 - platform: mqtt
-  name: "lr2"
+  name: "gateway2light2"
   state_topic: "/mqtt-gateway-2/light-2/state"
   command_topic: "/mqtt-gateway-2/light-2/cmd"
   optimistic: true
@@ -19,7 +19,7 @@
   retain: true
 
 - platform: mqtt
-  name: "garage"
+  name: "gateway2light3"
   state_topic: "/mqtt-gateway-2/light-3/state"
   command_topic: "/mqtt-gateway-2/light-3/cmd"
   optimistic: true
@@ -29,7 +29,7 @@
   retain: true
 
 - platform: mqtt
-  name: "lr4"
+  name: "gateway2light4"
   state_topic: "/mqtt-gateway-2/light-4/state"
   command_topic: "/mqtt-gateway-2/light-4/cmd"
   optimistic: true
@@ -39,7 +39,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned5"
+  name: "gateway2light5"
   state_topic: "/mqtt-gateway-2/light-5/state"
   command_topic: "/mqtt-gateway-2/light-5/cmd"
   optimistic: true
@@ -49,7 +49,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned6"
+  name: "gateway2light6"
   state_topic: "/mqtt-gateway-2/light-6/state"
   command_topic: "/mqtt-gateway-2/light-6/cmd"
   optimistic: true
@@ -59,7 +59,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned7"
+  name: "gateway2light7"
   state_topic: "/mqtt-gateway-2/light-7/state"
   command_topic: "/mqtt-gateway-2/light-7/cmd"
   optimistic: true
@@ -69,7 +69,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned8"
+  name: "gateway2light8"
   state_topic: "/mqtt-gateway-2/light-8/state"
   command_topic: "/mqtt-gateway-2/light-8/cmd"
   optimistic: true
@@ -79,7 +79,7 @@
   retain: true
 
 - platform: mqtt
-  name: "brground"
+  name: "gateway2light9"
   state_topic: "/mqtt-gateway-2/light-9/state"
   command_topic: "/mqtt-gateway-2/light-9/cmd"
   optimistic: true
@@ -89,7 +89,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned10"
+  name: "gateway2light10"
   state_topic: "/mqtt-gateway-2/light-10/state"
   command_topic: "/mqtt-gateway-2/light-10/cmd"
   optimistic: true
@@ -99,7 +99,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned11"
+  name: "gateway2light11"
   state_topic: "/mqtt-gateway-2/light-11/state"
   command_topic: "/mqtt-gateway-2/light-11/cmd"
   optimistic: true
@@ -109,7 +109,7 @@
   retain: true
 
 - platform: mqtt
-  name: "brgroundmirror"
+  name: "gateway2light12"
   state_topic: "/mqtt-gateway-2/light-12/state"
   command_topic: "/mqtt-gateway-2/light-12/cmd"
   optimistic: true
@@ -119,7 +119,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned13"
+  name: "gateway2light13"
   state_topic: "/mqtt-gateway-2/light-13/state"
   command_topic: "/mqtt-gateway-2/light-13/cmd"
   optimistic: true
@@ -129,7 +129,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned14"
+  name: "gateway2light14"
   state_topic: "/mqtt-gateway-2/light-14/state"
   command_topic: "/mqtt-gateway-2/light-14/cmd"
   optimistic: true
@@ -139,17 +139,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned6"
-  state_topic: "/mqtt-gateway-2/light-6/state"
-  command_topic: "/mqtt-gateway-2/light-6/cmd"
-  optimistic: true
-  payload_on: "on"
-  payload_off: "off"
-  qos: 1
-  retain: true
-
-- platform: mqtt
-  name: "unassigned15"
+  name: "gateway2light15"
   state_topic: "/mqtt-gateway-2/light-15/state"
   command_topic: "/mqtt-gateway-2/light-15/cmd"
   optimistic: true
@@ -159,7 +149,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned16"
+  name: "gateway2light16"
   state_topic: "/mqtt-gateway-2/light-16/state"
   command_topic: "/mqtt-gateway-2/light-16/cmd"
   optimistic: true
@@ -170,7 +160,7 @@
 
 
 - platform: mqtt
-  name: "unassigned17"
+  name: "gateway2light17"
   state_topic: "/mqtt-gateway-2/light-17/state"
   command_topic: "/mqtt-gateway-2/light-17/cmd"
   optimistic: true
@@ -180,7 +170,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned18"
+  name: "gateway2light18"
   state_topic: "/mqtt-gateway-2/light-18/state"
   command_topic: "/mqtt-gateway-2/light-18/cmd"
   optimistic: true
@@ -190,7 +180,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned19"
+  name: "gateway2light19"
   state_topic: "/mqtt-gateway-2/light-19/state"
   command_topic: "/mqtt-gateway-2/light-19/cmd"
   optimistic: true
@@ -200,7 +190,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned20"
+  name: "gateway2light20"
   state_topic: "/mqtt-gateway-2/light-20/state"
   command_topic: "/mqtt-gateway-2/light-20/cmd"
   optimistic: true
@@ -210,7 +200,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned21"
+  name: "gateway2light21"
   state_topic: "/mqtt-gateway-2/light-21/state"
   command_topic: "/mqtt-gateway-2/light-21/cmd"
   optimistic: true
@@ -220,7 +210,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned22"
+  name: "gateway2light22"
   state_topic: "/mqtt-gateway-2/light-22/state"
   command_topic: "/mqtt-gateway-2/light-22/cmd"
   optimistic: true
@@ -230,7 +220,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned23"
+  name: "gateway2light23"
   state_topic: "/mqtt-gateway-2/light-23/state"
   command_topic: "/mqtt-gateway-2/light-23/cmd"
   optimistic: true
@@ -240,7 +230,7 @@
   retain: true
 
 - platform: mqtt
-  name: "unassigned24"
+  name: "gateway2light24"
   state_topic: "/mqtt-gateway-2/light-24/state"
   command_topic: "/mqtt-gateway-2/light-24/cmd"
   optimistic: true

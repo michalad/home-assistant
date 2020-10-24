@@ -1,13 +1,13 @@
     title: Parter
     cards:
       - entities:
-          - entity: light.lr1
+          - entity: light.gateway2light7
             name: Salon 1
-          - entity: light.lr2
+          - entity: light.gateway2light8
             name: Salon 2
-          - entity: light.lr3
+          - entity: light.gateway2light21
             name: Salon 3
-          - entity: light.lr4
+          - entity: light.gateway2light14
             name: Salon 4
           - entity: climate.livingroomwindows
             name: Temperatura przy oknach
@@ -16,18 +16,18 @@
         title: Salon
         type: entities  
       - entities:
-          - entity: light.unassigned5
+          - entity: light.gateway2light23
             name: Kuchnia
-          - entity: light.unassigned6
+          - entity: light.gateway2light18
             name: Wyspa
           - entity: climate.todo
             name: Temperatura
         title: Kuchnia
         type: entities  
       - entities:
-          - entity: light.brground
+          - entity: light.gateway2light9
             name: Łazienka
-          - entity: light.brgroundmirror
+          - entity: light.gateway2light12
             name: Lustro
           - entity: switch.heatingbathroomgroundwall
             name: Ogrzewanie łazienka grzejnik (Parter)
@@ -37,18 +37,18 @@
         title: Łazienka
         type: entities  
       - entities:
-          - entity: light.garage
+          - entity: light.gateway2light3
             name: Garaz
           - entity: climate.todo
             name: Temperatura
         title: Garaz
         type: entities  
       - entities:
-          - entity: light.unassigned10
+          - entity: light.gateway2light10
             name: Korytarz
-          - entity: light.unassigned11
+          - entity: light.gateway2light20
             name: Wiatrołap
-          - entity: light.unassigned12
+          - entity: light.gateway2light4
             name: Kinkiety
           - entity: climate.todo
             name: Temperatura

@@ -1,7 +1,7 @@
 title: Piętro
 cards:
   - entities:
-    - entity: light.unassigned13
+    - entity: light.gateway2light2
       name: Łazienka
     - entity: light.unassigned14
       name: Lustro
@@ -10,16 +10,16 @@ cards:
     title: Łazienka
     type: entities
   - entities:
-    - entity: light.unassigned15
+    - entity: light.gateway2light13
       name: Korytarz
-    - entity: light.unassigned16
+    - entity: light.gateway2light4
       name: Kinkiety
     - entity: climate.todo
       name: Temperatura
     title: Korytarz
     type: entities
   - entities:
-    - entity: light.unassigned17
+    - entity: light.gateway2light15
       name: Antresola
     - entity: climate.todo
       name: Temperatura

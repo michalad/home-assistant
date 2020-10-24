@@ -22,5 +22,16 @@
           name: Całkowita produkcja
         title: Fotowoltaika
         type: entities
+      - entities:
+          - entity: light.gateway2light11
+            name: Elewacja - front
+          - entity: light.gateway2light
+            name: Elewacja - wschód
+          - entity: light.gateway2light
+            name: Elewacja - zachód
+          - entity: light.gateway2light
+            name: Elewacja - taras
+        title: Elewacja
+        type: entities 
     path: default_view
     
