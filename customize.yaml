@@ -2,3 +2,33 @@ light.gateway2light11:
   friendly_name: Elewacja front
 light.gateway2light3:
   friendly_name: Oświetlenie - Garaz
+light.gateway2light7:
+  friendly_name: Salon 1
+light.gateway2light8:
+  friendly_name: Salon 2
+light.gateway2light21:
+  friendly_name: Salon 3
+light.gateway2light14:
+  friendly_name: Salon 4
+light.gateway2light23:
+  friendly_name: Kuchnia
+light.gateway2light18:
+  friendly_name: Kuchnia - Wyspa
+light.gateway2light9:
+  friendly_name: Łazienka - Parter
+light.gateway2light12:
+  friendly_name: Łazienka - Parter - Lustro
+light.gateway2light10:
+  friendly_name: Korytarz - Parter
+light.gateway2light20:
+  friendly_name: Wiatrołap
+light.gateway2light4:
+  friendly_name: Kinkiety
+light.gateway2light2:
+  friendly_name: Łazienka - Piętro
+light.unassigned14:
+  friendly_name: Łazienka - Piętro - Lustro
+light.gateway2light13:
+  friendly_name: Korytarz - Piętro
+light.gateway2light15:
+  friendly_name: Antresola
