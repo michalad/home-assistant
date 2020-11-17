@@ -41,8 +41,8 @@ light: !include light.yaml
 
 camera:
   - platform: ffmpeg
-    name: wjazd
-    input: rtsp://192.168.0.18:554
+    name: kuchnia
+    input: rtsp://192.168.100.132:554
 
 mqtt:
   broker: 192.168.100.151

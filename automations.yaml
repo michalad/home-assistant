@@ -1,26 +1,26 @@
 - id: '1578161087836'
-  alias: Wyącz lampę
+  alias: Wylacz oswietlenie front
   description: ''
   trigger:
-  - at: '23:02'
-    platform: time
-  - at: '7:35'
+  - at: '22:00'
     platform: time
   condition: []
   action:
   - device_id: b0939001fa8447dba8f7bc4409c3d844
-    domain: switch
-    entity_id: switch.lamp
+    domain: light
+    entity_id: light.gateway2light11
     type: turn_off
 - id: '1578162711347'
-  alias: Włącz lampę
+  alias: Wlacz oswietlenie front
   description: ''
   trigger:
-  - event: sunset
-    platform: sun
+  #- event: sunset
+  #  platform: sun
+  - at: '19:00'
+    platform: time
   condition: []
   action:
   - device_id: b0939001fa8447dba8f7bc4409c3d844
-    domain: switch
-    entity_id: switch.lamp
+    domain: light
+    entity_id: light.gateway2light11
     type: turn_on

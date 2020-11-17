@@ -1,4 +1,4 @@
-switch.lights1_2:
-  friendly_name: Channel 2
-switch.lights1_1:
-  friendly_name: Channel 1
+light.gateway2light11:
+  friendly_name: Elewacja front
+light.gateway2light3:
+  friendly_name: Oświetlenie - Garaz

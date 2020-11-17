@@ -4,7 +4,7 @@
       - entity: weather.openweathermap
         type: weather-forecast
         name: Pogoda w Miechowie 
-      - entity: camera.wjazd
+      - entity: camera.kuchnia_mainstream
         type: picture-entity
         show_name: false
         show_state: false
