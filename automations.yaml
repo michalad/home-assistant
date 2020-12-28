@@ -14,8 +14,6 @@
   alias: Wlacz oswietlenie front
   description: ''
   trigger:
-  #- event: sunset
-  #  platform: sun
   - at: '19:00'
     platform: time
   condition: []
@@ -24,3 +22,21 @@
     domain: light
     entity_id: light.gateway2light11
     type: turn_on
+
+- alias: 'Włącz choinkę'
+  trigger:
+    platform: sun
+    event: sunset
+  condition: []
+  action:
+    service: switch.turn_on
+    entity_id: switch.wallplug1
+
+- alias: 'Wyłącz choinkę'
+  trigger:
+    at: '23:00'
+    platform: time
+  condition: []
+  action:
+    service: switch.turn_off
+    entity_id: switch.wallplug1

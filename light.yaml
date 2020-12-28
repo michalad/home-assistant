@@ -238,13 +238,3 @@
   payload_off: "off"
   qos: 1
   retain: true
-
-- platform: mqtt
-  name: "lamp"
-  state_topic: "stat/wallplug-1/POWER"
-  command_topic: "cmnd/wallplug-1/POWER"
-  optimistic: true
-  payload_on: "ON"
-  payload_off: "OFF"
-  qos: 1
-  retain: true

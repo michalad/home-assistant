@@ -9,6 +9,8 @@
             name: Salon 3
           - entity: light.gateway2light14
             name: Salon 4
+          - entity: switch.wallplug1
+            name: Choinka
           - entity: climate.livingroomwindows
             name: Temperatura przy oknach
           - entity: climate.livingroomkitchen

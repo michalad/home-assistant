@@ -26,9 +26,11 @@ light.gateway2light4:
   friendly_name: Kinkiety
 light.gateway2light2:
   friendly_name: Łazienka - Piętro
-light.unassigned14:
+light.gateway2light1:
   friendly_name: Łazienka - Piętro - Lustro
 light.gateway2light13:
   friendly_name: Korytarz - Piętro
 light.gateway2light15:
   friendly_name: Antresola
+switch.wallplug1:
+  friendly_name: Choinka

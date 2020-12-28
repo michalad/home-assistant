@@ -3,8 +3,11 @@ cards:
   - entities:
     - entity: light.gateway2light2
       name: Łazienka
-    - entity: light.unassigned14
+    - entity: light.gateway2light1
       name: Lustro
+    - entity: switch.heatingbathroomfloorwall
+      name: Ogrzewanie łazienka grzejnik (Piętro)
+      icon: 'mdi:fire'
     - entity: climate.todo
       name: Temperatura
     title: Łazienka

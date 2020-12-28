@@ -41,8 +41,8 @@ light: !include light.yaml
 
 camera:
   - platform: ffmpeg
-    name: kuchnia
-    input: rtsp://192.168.100.132:554
+    name: wjazd
+    input: rtsp://192.168.100.138:554
 
 mqtt:
   broker: 192.168.100.151
@@ -51,3 +51,19 @@ mqtt:
   client_id: dom-prd
   username: mqtt
   password: mqtt
+
+influxdb:
+  host: 192.168.100.151
+  username: homeassistant
+  password: homeassistant
+  include:
+    entities:
+       - sensor.openweathermap_temperature
+       - sensor.pv_outputpower
+       - sensor.pv_eday
+       - sensor.pv_etotal
+
+logger:
+  default: info
+  logs:
+    homeassistant.components.stream.worker: fatal

@@ -47,3 +47,23 @@
   payload_off: "OFF"
   qos: 1
   retain: true
+
+- platform: mqtt
+  name: "heatingbathroomfloorwall"
+  state_topic: "stat/heater-floor/POWER"
+  command_topic: "cmnd/heater-floor/POWER"
+  optimistic: true
+  payload_on: "ON"
+  payload_off: "OFF"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "wallplug1"
+  state_topic: "stat/wallplug-1/POWER"
+  command_topic: "cmnd/wallplug-1/POWER"
+  optimistic: true
+  payload_on: "ON"
+  payload_off: "OFF"
+  qos: 1
+  retain: true
