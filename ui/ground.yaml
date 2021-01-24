@@ -9,9 +9,9 @@
             name: Salon 3
           - entity: light.gateway2light14
             name: Salon 4
-          - entity: climate.livingroomwindows
+          - entity: climate.lrwindows
             name: Temperatura przy oknach
-          - entity: climate.livingroomkitchen
+          - entity: climate.lrkitchen
             name: Temperatura przy kuchni
         title: Salon
         type: entities  
@@ -24,7 +24,7 @@
             name: Wyspa
           - entity: light.gateway2light19
             name: Wyspa (Led)
-          - entity: climate.todo
+          - entity: climate.kitchen
             name: Temperatura
         title: Kuchnia
         type: entities  
@@ -35,15 +35,15 @@
             name: Lustro
           - entity: switch.heatingbathroomgroundwall
             name: Ogrzewanie łazienka grzejnik (Parter)
-            icon: 'mdi:fire'
-          - entity: climate.todo
+            icon: 'mdi:radiator'
+          - entity: climate.bathroomground
             name: Temperatura
         title: Łazienka
         type: entities  
       - entities:
           - entity: light.gateway2light3
             name: Garaz
-          - entity: climate.todo
+          - entity: climate.garage
             name: Temperatura
         title: Garaz
         type: entities  
@@ -54,7 +54,7 @@
             name: Wiatrołap
           - entity: light.gateway2light4
             name: Kinkiety
-          - entity: climate.todo
+          - entity: climate.hallground
             name: Temperatura
         title: Korytarz
         type: entities

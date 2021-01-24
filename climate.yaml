@@ -1,7 +1,29 @@
+#############
+## A
+#############
+  
+  - platform: generic_thermostat
+    name: boilerroom
+    heater: switch.heatingboilerroom
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
   - platform: generic_thermostat
     name: garage
     heater: switch.heatinggarage
-    target_sensor: sensor.garagetemp
+    target_sensor: sensor.TODO
     min_temp: 15
     max_temp: 30
     ac_mode: false
@@ -13,13 +35,13 @@
     keep_alive:
       minutes: 3
     initial_hvac_mode: "heat"
-    away_temp: 16
+    away_temp: 18
     precision: 0.1
 
   - platform: generic_thermostat
-    name: livingroomkitchen
-    heater: switch.heatinglrkitchen
-    target_sensor: sensor.livingroomkitchentemp
+    name: office
+    heater: switch.heatingoffice
+    target_sensor: sensor.TODO
     min_temp: 15
     max_temp: 30
     ac_mode: false
@@ -31,11 +53,88 @@
     keep_alive:
       minutes: 3
     initial_hvac_mode: "heat"
-    away_temp: 16
+    away_temp: 18
     precision: 0.1
 
   - platform: generic_thermostat
-    name: livingroomwindows
+    name: laundry
+    heater: switch.heatinglaundry
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
+  - platform: generic_thermostat
+    name: bathroomground
+    heater: switch.heatingbathroomground
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
+  - platform: generic_thermostat
+    name: hallground
+    heater: switch.heatinghallground
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
+
+#############
+## B
+#############
+
+  - platform: generic_thermostat
+    name: kitchen
+    heater: switch.heatingkitchen
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
+  - platform: generic_thermostat
+    name: lrwindows
     heater: switch.heatinglrwindows
     target_sensor: sensor.livingroomwindowstemp
     min_temp: 15
@@ -49,5 +148,153 @@
     keep_alive:
       minutes: 3
     initial_hvac_mode: "heat"
-    away_temp: 16
+    away_temp: 18
+    precision: 0.1
+
+  - platform: generic_thermostat
+    name: lrkitchen
+    heater: switch.heatinglrkitchen
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
+#############
+## C
+#############
+
+  - platform: generic_thermostat
+    name: room1
+    heater: switch.heatingroom1
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
+  - platform: generic_thermostat
+    name: room2
+    heater: switch.heatingroom2
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
+  - platform: generic_thermostat
+    name: room3
+    heater: switch.heatingroom3
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
+  - platform: generic_thermostat
+    name: room4
+    heater: switch.heatingroom4
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
+  - platform: generic_thermostat
+    name: mezzanine
+    heater: switch.heatingmezzanine
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
+  - platform: generic_thermostat
+    name: hallfloor
+    heater: switch.heatinghallfloor
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
+    precision: 0.1
+
+  - platform: generic_thermostat
+    name: bathroomfloor
+    heater: switch.heatingbathroomfloor
+    target_sensor: sensor.TODO
+    min_temp: 15
+    max_temp: 30
+    ac_mode: false
+    target_temp: 21
+    cold_tolerance: 0.5
+    hot_tolerance: 0.5
+    min_cycle_duration:
+      seconds: 5
+    keep_alive:
+      minutes: 3
+    initial_hvac_mode: "heat"
+    away_temp: 18
     precision: 0.1

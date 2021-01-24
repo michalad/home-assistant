@@ -1,14 +1,26 @@
     title: Ogrzewanie - Piętro
     cards:
-      - entity: climate.garage
+      - entity: climate.room1
         type: thermostat
-        name: Garaz
-      - entity: climate.livingroomkitchen
+        name: Pokój 1 (Składzik)
+      - entity: climate.room2
         type: thermostat
-        name: Salon (kuchnia)
-      - entity: climate.livingroomwindows
+        name: Pokój 2 (Prasowalnia)
+      - entity: climate.room3
         type: thermostat
-        name: Salon (okna)
+        name: Pokój 3 (Sypialnia)
+      - entity: climate.room4
+        type: thermostat
+        name: Pokój 4
+      - entity: climate.mezzanine
+        type: thermostat
+        name: Antresola
+      - entity: climate.hallfloor
+        type: thermostat
+        name: Korytarz
+      - entity: climate.bathroomfloor
+        type: thermostat
+        name: Łazienka
       - entities:
           - entity: switch.heatingroom1
             name: Pokój 1 (Składzik)

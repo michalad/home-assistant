@@ -1,12 +1,30 @@
     title: Ogrzewanie - Parter
     cards:
+      - entity: climate.boilerroom
+        type: thermostat
+        name: Kotłownia
       - entity: climate.garage
         type: thermostat
         name: Garaz
-      - entity: climate.livingroomkitchen
+      - entity: climate.office
+        type: thermostat
+        name: Gabinet
+      - entity: climate.laundry
+        type: thermostat
+        name: Pralnia
+      - entity: climate.bathroomground
+        type: thermostat
+        name: Łazienka
+      - entity: climate.hallground
+        type: thermostat
+        name: Korytarz
+      - entity: climate.kitchen
+        type: thermostat
+        name: Kuchnia
+      - entity: climate.lrkitchen
         type: thermostat
         name: Salon (kuchnia)
-      - entity: climate.livingroomwindows
+      - entity: climate.lrwindows
         type: thermostat
         name: Salon (okna)
       - entities:
