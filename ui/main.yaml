@@ -37,5 +37,10 @@
             name: Elewacja - taras
         title: Elewacja
         type: entities 
+      - entities:
+          - entity: switch.lightloft
+            name: Strych
+        title: Strych
+        type: entities
     path: default_view
     

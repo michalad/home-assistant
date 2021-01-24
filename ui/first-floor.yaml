@@ -17,6 +17,8 @@ cards:
       name: Korytarz
     - entity: light.gateway2light4
       name: Kinkiety
+    - entity: switch.wallplug1
+      name: Choinka
     - entity: climate.todo
       name: Temperatura
     title: Korytarz

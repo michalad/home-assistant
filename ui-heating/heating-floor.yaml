@@ -1,0 +1,39 @@
+    title: Ogrzewanie - Piętro
+    cards:
+      - entity: climate.garage
+        type: thermostat
+        name: Garaz
+      - entity: climate.livingroomkitchen
+        type: thermostat
+        name: Salon (kuchnia)
+      - entity: climate.livingroomwindows
+        type: thermostat
+        name: Salon (okna)
+      - entities:
+          - entity: switch.heatingroom1
+            name: Pokój 1 (Składzik)
+            icon: mdi:radiator
+          - entity: switch.heatingroom2
+            name: Pokój 2 (Prasowalnia)
+            icon: mdi:radiator
+          - entity: switch.heatingroom3
+            name: Pokój 3 (Sypialnia)
+            icon: mdi:radiator
+          - entity: switch.heatingroom4
+            name: Pokój 4
+            icon: mdi:radiator
+          - entity: switch.heatingmezzanine
+            name: Antresola
+            icon: mdi:radiator
+          - entity: switch.heatinghallfloor
+            name: Korytarz
+            icon: mdi:radiator
+          - entity: switch.heatingbathroomfloor
+            name: Łazienka (Podłogówka)
+            icon: mdi:radiator
+          - entity: switch.heatingbathroomfloorwall
+            name: Łazienka (Grzejnik)
+            icon: mdi:radiator
+        title: Ogrzewanie
+        type: entities
+    

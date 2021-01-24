@@ -5,10 +5,10 @@
   value_template: "{{ value_json.temperature }}"
 
 - platform: mqtt
-  state_topic: "/mqtt-gateway-1/temp-2"
+  state_topic: "tele/temp-liv-room-win/SENSOR"
   name: "livingroomwindowstemp"
   unit_of_measurement: '°C'
-  value_template: "{{ value_json.temperature }}"
+  value_template: "{{ value_json['DS18B20']['Temperature'] }}"
 
 - platform: mqtt
   state_topic: "/mqtt-gateway-1/temp-3"

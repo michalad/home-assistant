@@ -3,6 +3,5 @@ views:
   - !include ui/main.yaml
   - !include ui/ground.yaml
   - !include ui/first-floor.yaml
-  - !include ui/heating.yaml
 
   

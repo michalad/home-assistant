@@ -32,5 +32,7 @@ light.gateway2light13:
   friendly_name: Korytarz - Piętro
 light.gateway2light15:
   friendly_name: Antresola
+light.gateway2light17:
+  friendly_name: Kuchnia - Meble - Led
 switch.wallplug1:
   friendly_name: Choinka

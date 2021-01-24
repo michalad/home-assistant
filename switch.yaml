@@ -1,17 +1,11 @@
-- platform: mqtt
-  name: "heatinglrwindows"
-  state_topic: "/mqtt-gateway-1/heating-14/state"
-  command_topic: "/mqtt-gateway-1/heating-14/cmd"
-  optimistic: true
-  payload_on: "on"
-  payload_off: "off"
-  qos: 1
-  retain: true
+#############
+## A
+#############
 
 - platform: mqtt
-  name: "heatinglrkitchen"
-  state_topic: "/mqtt-gateway-1/heating-15/state"
-  command_topic: "/mqtt-gateway-1/heating-15/cmd"
+  name: "heatingboilerroom"
+  state_topic: "/mqtt-gateway-1/heating-a1/state"
+  command_topic: "/mqtt-gateway-1/heating-a1/cmd"
   optimistic: true
   payload_on: "on"
   payload_off: "off"
@@ -20,8 +14,28 @@
 
 - platform: mqtt
   name: "heatinggarage"
-  state_topic: "/mqtt-gateway-1/heating-16/state"
-  command_topic: "/mqtt-gateway-1/heating-16/cmd"
+  state_topic: "/mqtt-gateway-1/heating-a2/state"
+  command_topic: "/mqtt-gateway-1/heating-a2/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "heatingoffice"
+  state_topic: "/mqtt-gateway-1/heating-a3/state"
+  command_topic: "/mqtt-gateway-1/heating-a3/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "heatinglaundry"
+  state_topic: "/mqtt-gateway-1/heating-a4/state"
+  command_topic: "/mqtt-gateway-1/heating-a4/cmd"
   optimistic: true
   payload_on: "on"
   payload_off: "off"
@@ -30,13 +44,136 @@
 
 - platform: mqtt
   name: "heatingbathroomground"
-  state_topic: "/mqtt-gateway-1/heating-17/state"
-  command_topic: "/mqtt-gateway-1/heating-17/cmd"
+  state_topic: "/mqtt-gateway-1/heating-a5/state"
+  command_topic: "/mqtt-gateway-1/heating-a5/cmd"
   optimistic: true
   payload_on: "on"
   payload_off: "off"
   qos: 1
   retain: true
+
+- platform: mqtt
+  name: "heatinghallground"
+  state_topic: "/mqtt-gateway-1/heating-a6/state"
+  command_topic: "/mqtt-gateway-1/heating-a6/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+#############
+## B
+#############
+
+- platform: mqtt
+  name: "heatingkitchen"
+  state_topic: "/mqtt-gateway-1/heating-b1/state"
+  command_topic: "/mqtt-gateway-1/heating-b1/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "heatinglrwindows"
+  state_topic: "/mqtt-gateway-1/heating-b2/state"
+  command_topic: "/mqtt-gateway-1/heating-b2/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "heatinglrkitchen"
+  state_topic: "/mqtt-gateway-1/heating-b3/state"
+  command_topic: "/mqtt-gateway-1/heating-b3/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+
+#############
+## C
+#############
+
+- platform: mqtt
+  name: "heatingroom1"
+  state_topic: "/mqtt-gateway-1/heating-c1/state"
+  command_topic: "/mqtt-gateway-1/heating-c1/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "heatingroom2"
+  state_topic: "/mqtt-gateway-1/heating-c2/state"
+  command_topic: "/mqtt-gateway-1/heating-c2/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "heatingroom3"
+  state_topic: "/mqtt-gateway-1/heating-c3/state"
+  command_topic: "/mqtt-gateway-1/heating-c3/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "heatingroom4"
+  state_topic: "/mqtt-gateway-1/heating-c4/state"
+  command_topic: "/mqtt-gateway-1/heating-c4/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "heatingmezzanine"
+  state_topic: "/mqtt-gateway-1/heating-c5/state"
+  command_topic: "/mqtt-gateway-1/heating-c5/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "heatinghallfloor"
+  state_topic: "/mqtt-gateway-1/heating-c6/state"
+  command_topic: "/mqtt-gateway-1/heating-c6/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "heatingbathroomfloor"
+  state_topic: "/mqtt-gateway-1/heating-c7/state"
+  command_topic: "/mqtt-gateway-1/heating-c7/cmd"
+  optimistic: true
+  payload_on: "on"
+  payload_off: "off"
+  qos: 1
+  retain: true
+
+#############
+## REMOTE
+#############
 
 - platform: mqtt
   name: "heatingbathroomgroundwall"
@@ -52,6 +189,16 @@
   name: "heatingbathroomfloorwall"
   state_topic: "stat/heater-floor/POWER"
   command_topic: "cmnd/heater-floor/POWER"
+  optimistic: true
+  payload_on: "ON"
+  payload_off: "OFF"
+  qos: 1
+  retain: true
+
+- platform: mqtt
+  name: "lightloft"
+  state_topic: "stat/light-loft/POWER"
+  command_topic: "cmnd/light-loft/POWER"
   optimistic: true
   payload_on: "ON"
   payload_off: "OFF"

@@ -9,8 +9,6 @@
             name: Salon 3
           - entity: light.gateway2light14
             name: Salon 4
-          - entity: switch.wallplug1
-            name: Choinka
           - entity: climate.livingroomwindows
             name: Temperatura przy oknach
           - entity: climate.livingroomkitchen
@@ -20,8 +18,12 @@
       - entities:
           - entity: light.gateway2light23
             name: Kuchnia
+          - entity: light.gateway2light17
+            name: Kuchnia (Meble led)
           - entity: light.gateway2light18
             name: Wyspa
+          - entity: light.gateway2light19
+            name: Wyspa (Led)
           - entity: climate.todo
             name: Temperatura
         title: Kuchnia
@@ -56,3 +58,26 @@
             name: Temperatura
         title: Korytarz
         type: entities
+      - entity: vacuum.ground
+        type: 'custom:vacuum-card'
+        stats:
+          default:
+            - attribute: filter_left
+              unit: hours
+              subtitle: Filter
+            - attribute: side_brush_left
+              unit: hours
+              subtitle: Side brush
+            - attribute: main_brush_left
+              unit: hours
+              subtitle: Main brush
+            - attribute: sensor_dirty_left
+              unit: hours
+              subtitle: Sensors
+          cleaning:
+            - attribute: cleaned_area
+              unit: m2
+              subtitle: Cleaning area
+            - attribute: cleaning_time
+              unit: minutes
+              subtitle: Cleaning time

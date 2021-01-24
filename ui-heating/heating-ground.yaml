@@ -1,0 +1,45 @@
+    title: Ogrzewanie - Parter
+    cards:
+      - entity: climate.garage
+        type: thermostat
+        name: Garaz
+      - entity: climate.livingroomkitchen
+        type: thermostat
+        name: Salon (kuchnia)
+      - entity: climate.livingroomwindows
+        type: thermostat
+        name: Salon (okna)
+      - entities:
+          - entity: switch.heatingboilerroom
+            name: Kotłownia
+            icon: mdi:radiator
+          - entity: switch.heatinggarage
+            name: Garaz
+            icon: mdi:radiator
+          - entity: switch.heatingoffice
+            name: Gabinet
+            icon: mdi:radiator
+          - entity: switch.heatinglaundry
+            name: Pralnia
+            icon: mdi:radiator
+          - entity: switch.heatingbathroomground
+            name: Łazienka (podłogówka)
+            icon: mdi:radiator
+          - entity: switch.heatingbathroomgroundwall
+            name: Łazienka grzejnik
+            icon: mdi:radiator
+          - entity: switch.heatinghallground
+            name: Korytarz
+            icon: mdi:radiator
+          - entity: switch.heatingkitchen
+            name: Kuchnia
+            icon: mdi:radiator
+          - entity: switch.heatinglrkitchen
+            name: Salon (Od kuchni)
+            icon: mdi:radiator
+          - entity: switch.heatinglrwindows
+            name: Salon (Od okien)
+            icon: mdi:radiator
+        title: Ogrzewanie
+        type: entities
+    

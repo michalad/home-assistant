@@ -2,11 +2,6 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
-# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-# http:
-#   base_url: example.duckdns.org:8123
-
-# Text to speech
 tts:
   - platform: google_translate
 
@@ -30,6 +25,16 @@ homeassistant:
 
 lovelace:
   mode: yaml
+  resources:
+    - url: /local/community/vacuum-card/vacuum-card.js
+      type: module
+  dashboards:
+    lovelace-yaml:
+      mode: yaml
+      title: Ogrzewanie
+      show_in_sidebar: true
+      icon: mdi:radiator
+      filename: ui-heating/heating.yaml
 
 group: !include groups.yaml
 automation: !include automations.yaml
@@ -62,6 +67,13 @@ influxdb:
        - sensor.pv_outputpower
        - sensor.pv_eday
        - sensor.pv_etotal
+       - sensor.livingroomwindowstemp
+
+vacuum:
+  - platform: xiaomi_miio
+    host: 192.168.100.108
+    token: !secret xiaomi_vacuum
+    name: ground
 
 logger:
   default: info
