@@ -11,8 +11,8 @@
   value_template: "{{ value_json['DS18B20']['Temperature'] }}"
 
 - platform: mqtt
-  state_topic: "/mqtt-gateway-1/temp-3"
-  name: "livingroomkitchentemp"
+  state_topic: "/mqtt-gateway-3/temp-1"
+  name: "officetemp"
   unit_of_measurement: '°C'
   value_template: "{{ value_json.temperature }}"
 

@@ -68,6 +68,8 @@ influxdb:
        - sensor.pv_eday
        - sensor.pv_etotal
        - sensor.livingroomwindowstemp
+       - sensor.officetemp
+       - switch.heatingoffice
 
 vacuum:
   - platform: xiaomi_miio

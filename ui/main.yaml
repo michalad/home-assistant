@@ -35,7 +35,15 @@
             name: Elewacja - zachód
           - entity: light.gateway2light
             name: Elewacja - taras
+          
         title: Elewacja
+        type: entities 
+      - entities:
+          - entity: switch.balcony
+            name: Lampki - balkon
+          - entity: switch.wallplug1
+            name: Choinka
+        title: Święta
         type: entities 
       - entities:
           - entity: switch.lightloft

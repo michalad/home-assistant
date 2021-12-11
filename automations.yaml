@@ -1,38 +1,47 @@
-- id: '1578161087836'
-  alias: Wylacz oswietlenie front
-  description: ''
+- alias: 'Wylacz oswietlenie front'
   trigger:
-  - at: '22:00'
-    platform: time
+    - at: '22:00'
+      platform: time
   condition: []
   action:
-  - device_id: b0939001fa8447dba8f7bc4409c3d844
-    domain: light
     entity_id: light.gateway2light11
-    type: turn_off
-- id: '1578162711347'
-  alias: Wlacz oswietlenie front
-  description: ''
+    service: light.turn_off
+
+- alias: 'Wlacz oswietlenie front'
   trigger:
-  - at: '19:00'
-    platform: time
+    - at: '19:00'
+      platform: time
   condition: []
   action:
-  - device_id: b0939001fa8447dba8f7bc4409c3d844
-    domain: light
     entity_id: light.gateway2light11
-    type: turn_on
+    service: light.turn_on
 
 - alias: 'Włącz choinkę'
   trigger:
     - platform: sun
       event: sunset
-    - platform: time
-      at: '5:40'
   condition: []
   action:
     service: switch.turn_on
     entity_id: switch.wallplug1
+
+- alias: 'Włącz lampki'
+  trigger:
+    - platform: sun
+      event: sunset
+  condition: []
+  action:
+    service: switch.turn_on
+    entity_id: switch.balcony
+
+- alias: 'Wyłącz lampki'
+  trigger:
+    - platform: time
+      at: '23:00'
+  condition: []
+  action:
+    service: switch.turn_off
+    entity_id: switch.balcony
 
 - alias: 'Wyłącz choinkę'
   trigger:
@@ -44,3 +53,21 @@
   action:
     service: switch.turn_off
     entity_id: switch.wallplug1
+
+- alias: 'Włącz LEDY kuchnia'
+  trigger:
+    - platform: time
+      at: '5:40'
+  condition: []
+  action:
+    service: light.turn_on
+    entity_id: light.gateway2light17
+
+- alias: 'Wyłącz LEDY kuchnia'
+  trigger:
+    - platform: time
+      at: '7:00'
+  condition: []
+  action:
+    service: light.turn_off
+    entity_id: light.gateway2light17

@@ -214,3 +214,13 @@
   payload_off: "OFF"
   qos: 1
   retain: true
+
+- platform: mqtt
+  name: "balcony"
+  state_topic: "stat/tasmota_FF7061/POWER"
+  command_topic: "cmnd/tasmota_FF7061/POWER"
+  optimistic: true
+  payload_on: "ON"
+  payload_off: "OFF"
+  qos: 1
+  retain: true
