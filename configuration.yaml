@@ -69,6 +69,7 @@ influxdb:
        - sensor.pv_etotal
        - sensor.livingroomwindowstemp
        - sensor.officetemp
+       - sensor.garageetemp
        - switch.heatingoffice
 
 vacuum:

@@ -23,7 +23,7 @@
   - platform: generic_thermostat
     name: garage
     heater: switch.heatinggarage
-    target_sensor: sensor.TODO
+    target_sensor: sensor.garagetemp
     min_temp: 15
     max_temp: 30
     ac_mode: false
