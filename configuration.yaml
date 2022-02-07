@@ -58,9 +58,13 @@ mqtt:
   password: mqtt
 
 influxdb:
+  api_version: 2
   host: 192.168.100.151
-  username: homeassistant
-  password: homeassistant
+  ssl: false
+  token: !secret influx
+  organization: homeassistant
+  bucket: home_assistant
+  port: 8086
   include:
     entities:
        - sensor.openweathermap_temperature
