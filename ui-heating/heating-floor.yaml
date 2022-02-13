@@ -1,17 +1,17 @@
     title: Ogrzewanie - Piętro
     cards:
-      - entity: climate.room1
+      - entity: climate.room1_suzanne
         type: thermostat
-        name: Pokój 1 (Składzik)
+        name: Pokój 1 (Zuzia)
       - entity: climate.room2
         type: thermostat
         name: Pokój 2 (Prasowalnia)
-      - entity: climate.room3
+      - entity: climate.room3_bedroom
         type: thermostat
         name: Pokój 3 (Sypialnia)
       - entity: climate.room4
         type: thermostat
-        name: Pokój 4
+        name:  Pokój 4 (Składzik)
       - entity: climate.mezzanine
         type: thermostat
         name: Antresola
@@ -22,17 +22,17 @@
         type: thermostat
         name: Łazienka
       - entities:
-          - entity: switch.heatingroom1
-            name: Pokój 1 (Składzik)
+          - entity: switch.heatingroom1_suzanne
+            name: Pokój 1 (Zuzia)
             icon: mdi:radiator
           - entity: switch.heatingroom2
             name: Pokój 2 (Prasowalnia)
             icon: mdi:radiator
-          - entity: switch.heatingroom3
+          - entity: switch.heatingroom3_bedroom
             name: Pokój 3 (Sypialnia)
             icon: mdi:radiator
           - entity: switch.heatingroom4
-            name: Pokój 4
+            name: Pokój 4 (Składzik)
             icon: mdi:radiator
           - entity: switch.heatingmezzanine
             name: Antresola

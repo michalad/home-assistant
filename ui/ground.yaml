@@ -58,7 +58,7 @@
             name: Temperatura
         title: Korytarz
         type: entities
-      - entity: vacuum.ground
+      - entity: vacuum.salon
         type: 'custom:vacuum-card'
         stats:
           default:

@@ -1,0 +1,18 @@
+- id: '1644075866016'
+  name: Serial
+  entities:
+    light.gateway2light18:
+      supported_color_modes:
+      - onoff
+      assumed_state: false
+      friendly_name: Kuchnia - Wyspa
+      supported_features: 0
+      state: 'off'
+    light.gateway2light4:
+      supported_color_modes:
+      - onoff
+      assumed_state: false
+      friendly_name: Kinkiety
+      supported_features: 0
+      state: 'off'
+  icon: mdi:movie

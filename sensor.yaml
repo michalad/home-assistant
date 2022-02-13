@@ -16,6 +16,18 @@
   unit_of_measurement: '°C'
   value_template: "{{ value_json.temperature }}"
 
+- platform: mqtt
+  state_topic: "/mqtt-gateway-3/temp-3"
+  name: "room3_bedroomtemp"
+  unit_of_measurement: '°C'
+  value_template: "{{ value_json.temperature }}"
+
+- platform: mqtt
+  state_topic: "/mqtt-gateway-3/temp-4"
+  name: "room1_suzanne"
+  unit_of_measurement: '°C'
+  value_template: "{{ value_json.temperature }}"
+
 - platform: sems
   username: !secret sems_email
   password: !secret sems_password

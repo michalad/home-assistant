@@ -102,7 +102,7 @@
 #############
 
 - platform: mqtt
-  name: "heatingroom1"
+  name: "heatingroom1_suzanne"
   state_topic: "/mqtt-gateway-1/heating-c1/state"
   command_topic: "/mqtt-gateway-1/heating-c1/cmd"
   optimistic: true
@@ -122,7 +122,7 @@
   retain: true
 
 - platform: mqtt
-  name: "heatingroom3"
+  name: "heatingroom3_bedroom"
   state_topic: "/mqtt-gateway-1/heating-c3/state"
   command_topic: "/mqtt-gateway-1/heating-c3/cmd"
   optimistic: true

@@ -29,12 +29,10 @@
       - entities:
           - entity: light.gateway2light11
             name: Elewacja - front
-          - entity: light.gateway2light
-            name: Elewacja - wschód
-          - entity: light.gateway2light
+          - entity: light.gateway2light16
             name: Elewacja - zachód
-          - entity: light.gateway2light
-            name: Elewacja - taras
+          - entity: light.gateway2light5
+            name: Elewacja - tył
           
         title: Elewacja
         type: entities 

@@ -173,10 +173,11 @@
 ## C
 #############
 
+  # Zuzia
   - platform: generic_thermostat
-    name: room1
-    heater: switch.heatingroom1
-    target_sensor: sensor.TODO
+    name: room1_suzanne
+    heater: switch.heatingroom1_suzanne
+    target_sensor: sensor.room1_suzanne
     min_temp: 15
     max_temp: 30
     ac_mode: false
@@ -209,10 +210,11 @@
     away_temp: 18
     precision: 0.1
 
+  # Sypialnia
   - platform: generic_thermostat
-    name: room3
-    heater: switch.heatingroom3
-    target_sensor: sensor.TODO
+    name: room3_bedroom
+    heater: switch.heatingroom3_bedroom
+    target_sensor: sensor.room3_bedroomtemp
     min_temp: 15
     max_temp: 30
     ac_mode: false

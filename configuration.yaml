@@ -65,22 +65,6 @@ influxdb:
   organization: homeassistant
   bucket: home_assistant
   port: 8086
-  include:
-    entities:
-       - sensor.openweathermap_temperature
-       - sensor.pv_outputpower
-       - sensor.pv_eday
-       - sensor.pv_etotal
-       - sensor.livingroomwindowstemp
-       - sensor.officetemp
-       - sensor.garageetemp
-       - switch.heatingoffice
-
-vacuum:
-  - platform: xiaomi_miio
-    host: 192.168.100.108
-    token: !secret xiaomi_vacuum
-    name: ground
 
 logger:
   default: info

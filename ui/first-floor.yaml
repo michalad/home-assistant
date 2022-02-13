@@ -30,3 +30,37 @@ cards:
       name: Temperatura
     title: Antresola
     type: entities
+  - entity: vacuum.pietro
+    type: 'custom:vacuum-card'
+    stats:
+      default:
+        - attribute: filter_left
+          unit: hours
+          subtitle: Filter
+        - attribute: side_brush_left
+          unit: hours
+          subtitle: Side brush
+        - attribute: main_brush_left
+          unit: hours
+          subtitle: Main brush
+        - attribute: sensor_dirty_left
+          unit: hours
+          subtitle: Sensors
+      cleaning:
+        - attribute: cleaned_area
+          unit: m2
+          subtitle: Cleaning area
+        - attribute: cleaning_time
+          unit: minutes
+          subtitle: Cleaning time    
+  - entities:
+    - entity: climate.room1_suzanne
+      name: Pokój 1 (Zuzia)
+    - entity: climate.room2
+      name: Pokój 2 (Prasowalnia)
+    - entity: climate.room3_bedroom
+      name: Pokój 3 (Sypialnia)
+    - entity: climate.room4
+      name: Pokój 4 (Składzik)
+    title: Pokoje
+    type: entities
