@@ -39,10 +39,9 @@ lovelace:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
-switch: !include switch.yaml
 sensor: !include sensor.yaml
 climate: !include climate.yaml
-light: !include light.yaml
+
 
 camera:
   - platform: ffmpeg
@@ -56,6 +55,9 @@ mqtt:
   client_id: dom-prd
   username: mqtt
   password: mqtt
+  light: !include light.yaml
+  sensor: !include sensor-mqtt.yaml
+  switch: !include switch.yaml
 
 influxdb:
   api_version: 2

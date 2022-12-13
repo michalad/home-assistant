@@ -9,7 +9,7 @@
     min_temp: 15
     max_temp: 30
     ac_mode: false
-    target_temp: 21
+    target_temp: 20
     cold_tolerance: 0.5
     hot_tolerance: 0.5
     min_cycle_duration:
@@ -27,7 +27,7 @@
     min_temp: 15
     max_temp: 30
     ac_mode: false
-    target_temp: 21
+    target_temp: 20
     cold_tolerance: 0.5
     hot_tolerance: 0.5
     min_cycle_duration:
@@ -45,7 +45,7 @@
     min_temp: 15
     max_temp: 30
     ac_mode: false
-    target_temp: 21
+    target_temp: 20
     cold_tolerance: 0.5
     hot_tolerance: 0.5
     min_cycle_duration:
@@ -63,7 +63,7 @@
     min_temp: 15
     max_temp: 30
     ac_mode: false
-    target_temp: 21
+    target_temp: 20
     cold_tolerance: 0.5
     hot_tolerance: 0.5
     min_cycle_duration:
@@ -81,7 +81,7 @@
     min_temp: 15
     max_temp: 30
     ac_mode: false
-    target_temp: 21
+    target_temp: 22
     cold_tolerance: 0.5
     hot_tolerance: 0.5
     min_cycle_duration:
@@ -118,7 +118,7 @@
   - platform: generic_thermostat
     name: kitchen
     heater: switch.heatingkitchen
-    target_sensor: sensor.TODO
+    target_sensor: sensor.wifi_temperature_humidity_sensor_temperature
     min_temp: 15
     max_temp: 30
     ac_mode: false
@@ -181,7 +181,7 @@
     min_temp: 15
     max_temp: 30
     ac_mode: false
-    target_temp: 21
+    target_temp: 22
     cold_tolerance: 0.5
     hot_tolerance: 0.5
     min_cycle_duration:
@@ -286,11 +286,11 @@
   - platform: generic_thermostat
     name: bathroomfloor
     heater: switch.heatingbathroomfloor
-    target_sensor: sensor.TODO
+    target_sensor: sensor.floor_bathroom
     min_temp: 15
     max_temp: 30
     ac_mode: false
-    target_temp: 21
+    target_temp: 22
     cold_tolerance: 0.5
     hot_tolerance: 0.5
     min_cycle_duration:

@@ -1,0 +1,29 @@
+- state_topic: "tele/temp-liv-room-win/SENSOR"
+  name: "livingroomwindowstemp"
+  unit_of_measurement: '°C'
+  value_template: "{{ value_json['DS18B20']['Temperature'] }}"
+
+- state_topic: "/mqtt-gateway-3/temp-1"
+  name: "officetemp"
+  unit_of_measurement: '°C'
+  value_template: "{{ value_json.temperature }}"
+
+- state_topic: "/mqtt-gateway-3/temp-2"
+  name: "garagetemp"
+  unit_of_measurement: '°C'
+  value_template: "{{ value_json.temperature }}"
+
+- state_topic: "/mqtt-gateway-3/temp-3"
+  name: "room3_bedroomtemp"
+  unit_of_measurement: '°C'
+  value_template: "{{ value_json.temperature }}"
+
+- state_topic: "/mqtt-gateway-3/temp-4"
+  name: "room1_suzanne"
+  unit_of_measurement: '°C'
+  value_template: "{{ value_json.temperature }}"
+
+- state_topic: "/mqtt-gateway-3/temp-5"
+  name: "floor_bathroom"
+  unit_of_measurement: '°C'
+  value_template: "{{ value_json.temperature }}"

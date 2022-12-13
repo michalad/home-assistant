@@ -2,8 +2,7 @@
 ## A
 #############
 
-- platform: mqtt
-  name: "heatingboilerroom"
+- name: "heatingboilerroom"
   state_topic: "/mqtt-gateway-1/heating-a1/state"
   command_topic: "/mqtt-gateway-1/heating-a1/cmd"
   optimistic: true
@@ -12,8 +11,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatinggarage"
+- name: "heatinggarage"
   state_topic: "/mqtt-gateway-1/heating-a2/state"
   command_topic: "/mqtt-gateway-1/heating-a2/cmd"
   optimistic: true
@@ -22,8 +20,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatingoffice"
+- name: "heatingoffice"
   state_topic: "/mqtt-gateway-1/heating-a3/state"
   command_topic: "/mqtt-gateway-1/heating-a3/cmd"
   optimistic: true
@@ -32,8 +29,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatinglaundry"
+- name: "heatinglaundry"
   state_topic: "/mqtt-gateway-1/heating-a4/state"
   command_topic: "/mqtt-gateway-1/heating-a4/cmd"
   optimistic: true
@@ -42,8 +38,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatingbathroomground"
+- name: "heatingbathroomground"
   state_topic: "/mqtt-gateway-1/heating-a5/state"
   command_topic: "/mqtt-gateway-1/heating-a5/cmd"
   optimistic: true
@@ -52,8 +47,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatinghallground"
+- name: "heatinghallground"
   state_topic: "/mqtt-gateway-1/heating-a6/state"
   command_topic: "/mqtt-gateway-1/heating-a6/cmd"
   optimistic: true
@@ -66,8 +60,7 @@
 ## B
 #############
 
-- platform: mqtt
-  name: "heatingkitchen"
+- name: "heatingkitchen"
   state_topic: "/mqtt-gateway-1/heating-b1/state"
   command_topic: "/mqtt-gateway-1/heating-b1/cmd"
   optimistic: true
@@ -76,8 +69,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatinglrwindows"
+- name: "heatinglrwindows"
   state_topic: "/mqtt-gateway-1/heating-b2/state"
   command_topic: "/mqtt-gateway-1/heating-b2/cmd"
   optimistic: true
@@ -86,8 +78,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatinglrkitchen"
+- name: "heatinglrkitchen"
   state_topic: "/mqtt-gateway-1/heating-b3/state"
   command_topic: "/mqtt-gateway-1/heating-b3/cmd"
   optimistic: true
@@ -101,8 +92,7 @@
 ## C
 #############
 
-- platform: mqtt
-  name: "heatingroom1_suzanne"
+- name: "heatingroom1_suzanne"
   state_topic: "/mqtt-gateway-1/heating-c1/state"
   command_topic: "/mqtt-gateway-1/heating-c1/cmd"
   optimistic: true
@@ -111,8 +101,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatingroom2"
+- name: "heatingroom2"
   state_topic: "/mqtt-gateway-1/heating-c2/state"
   command_topic: "/mqtt-gateway-1/heating-c2/cmd"
   optimistic: true
@@ -121,8 +110,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatingroom3_bedroom"
+- name: "heatingroom3_bedroom"
   state_topic: "/mqtt-gateway-1/heating-c3/state"
   command_topic: "/mqtt-gateway-1/heating-c3/cmd"
   optimistic: true
@@ -131,8 +119,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatingroom4"
+- name: "heatingroom4"
   state_topic: "/mqtt-gateway-1/heating-c4/state"
   command_topic: "/mqtt-gateway-1/heating-c4/cmd"
   optimistic: true
@@ -141,8 +128,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatingmezzanine"
+- name: "heatingmezzanine"
   state_topic: "/mqtt-gateway-1/heating-c5/state"
   command_topic: "/mqtt-gateway-1/heating-c5/cmd"
   optimistic: true
@@ -151,8 +137,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatinghallfloor"
+- name: "heatinghallfloor"
   state_topic: "/mqtt-gateway-1/heating-c6/state"
   command_topic: "/mqtt-gateway-1/heating-c6/cmd"
   optimistic: true
@@ -161,8 +146,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatingbathroomfloor"
+- name: "heatingbathroomfloor"
   state_topic: "/mqtt-gateway-1/heating-c7/state"
   command_topic: "/mqtt-gateway-1/heating-c7/cmd"
   optimistic: true
@@ -175,28 +159,25 @@
 ## REMOTE
 #############
 
-- platform: mqtt
-  name: "heatingbathroomgroundwall"
+- name: "heatingbathroomgroundwall"
   state_topic: "stat/wallplug-2/POWER"
   command_topic: "cmnd/wallplug-2/POWER"
-  optimistic: true
+  optimistic: false
   payload_on: "ON"
   payload_off: "OFF"
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "heatingbathroomfloorwall"
+- name: "heatingbathroomfloorwall"
   state_topic: "stat/heater-floor/POWER"
   command_topic: "cmnd/heater-floor/POWER"
-  optimistic: true
+  optimistic: false
   payload_on: "ON"
   payload_off: "OFF"
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "lightloft"
+- name: "lightloft"
   state_topic: "stat/light-loft/POWER"
   command_topic: "cmnd/light-loft/POWER"
   optimistic: true
@@ -205,8 +186,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "wallplug1"
+- name: "wallplug1"
   state_topic: "stat/wallplug-1/POWER"
   command_topic: "cmnd/wallplug-1/POWER"
   optimistic: true
@@ -215,8 +195,7 @@
   qos: 1
   retain: true
 
-- platform: mqtt
-  name: "balcony"
+- name: "balcony"
   state_topic: "stat/tasmota_FF7061/POWER"
   command_topic: "cmnd/tasmota_FF7061/POWER"
   optimistic: true
