@@ -203,3 +203,11 @@
   payload_off: "OFF"
   qos: 1
   retain: true
+
+- name: "waterflow"
+  state_topic: "stat/tasmota_water/POWER1"
+  command_topic: "cmnd/tasmota_water/POWER1"
+  payload_on: "ON"
+  payload_off: "OFF"
+  qos: 1
+  retain: true

@@ -15,6 +15,8 @@ homeassistant:
   longitude: 20.046405
   elevation: 300
   unit_system: metric
+  currency: PLN
+  country: PL
   time_zone: Europe/Warsaw
   customize: !include customize.yaml
   customize_domain:
@@ -49,12 +51,12 @@ camera:
     input: rtsp://192.168.100.138:554
 
 mqtt:
-  broker: 192.168.100.151
-  protocol: 3.1.1
-  keepalive: 60
-  client_id: dom-prd
-  username: mqtt
-  password: mqtt
+  #broker: 192.168.100.151
+  #protocol: 3.1.1
+  #keepalive: 60
+  #client_id: dom-prd
+  #username: mqtt
+  #password: mqtt
   light: !include light.yaml
   sensor: !include sensor-mqtt.yaml
   switch: !include switch.yaml

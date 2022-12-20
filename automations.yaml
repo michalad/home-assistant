@@ -1,73 +1,112 @@
-- alias: 'Wylacz oswietlenie front'
+- alias: Wylacz oswietlenie front
   trigger:
-    - at: '22:00'
-      platform: time
+  - at: '22:00'
+    platform: time
   condition: []
   action:
     entity_id: light.gateway2light11
     service: light.turn_off
-
-- alias: 'Wlacz oswietlenie front'
+  id: 07f71155089c4000b255bf024777c65c
+- alias: Wlacz oswietlenie front
   trigger:
-    - at: '19:00'
-      platform: time
+  - at: '19:00'
+    platform: time
   condition: []
   action:
     entity_id: light.gateway2light11
     service: light.turn_on
-
-- alias: 'Włącz choinkę'
+  id: 450499f85e2142e79a8bde6924cc0f7d
+- alias: Włącz choinkę
   trigger:
-    - platform: sun
-      event: sunset
+  - platform: sun
+    event: sunset
   condition: []
   action:
     service: switch.turn_on
     entity_id: switch.wallplug1
-
-- alias: 'Włącz lampki'
+  id: 5392930cc3d044778805568afc2bc27c
+- alias: Włącz lampki
   trigger:
-    - platform: sun
-      event: sunset
+  - platform: sun
+    event: sunset
   condition: []
   action:
     service: switch.turn_on
     entity_id: switch.balcony
-
-- alias: 'Wyłącz lampki'
+  id: 94550835800e4a9695f73b747506cb2a
+- alias: Wyłącz lampki
   trigger:
-    - platform: time
-      at: '23:00'
+  - platform: time
+    at: '23:00'
   condition: []
   action:
     service: switch.turn_off
     entity_id: switch.balcony
-
-- alias: 'Wyłącz choinkę'
+  id: 7c3a4f4d1a3e4ccaadb40b323d92e088
+- alias: Wyłącz choinkę
   trigger:
-    - platform: time
-      at: '23:00'
-    - platform: time
-      at: '8:00'
+  - platform: time
+    at: '23:00'
+  - platform: time
+    at: '8:00'
   condition: []
   action:
     service: switch.turn_off
     entity_id: switch.wallplug1
-
-- alias: 'Włącz LEDY kuchnia'
+  id: 4dbfd42980f14323af1ca7a77257bd20
+- alias: Włącz LEDY kuchnia
   trigger:
-    - platform: time
-      at: '5:40'
+  - platform: time
+    at: '5:40'
   condition: []
   action:
     service: light.turn_on
     entity_id: light.gateway2light17
-
-- alias: 'Wyłącz LEDY kuchnia'
+  id: 582a59a405ac49068e8aa99ec2c609ef
+- alias: Wyłącz LEDY kuchnia
   trigger:
-    - platform: time
-      at: '7:00'
+  - platform: time
+    at: '7:00'
   condition: []
   action:
     service: light.turn_off
     entity_id: light.gateway2light17
+  id: bb9d135cb0d745cda231e1ce40595108
+- id: '1671557570818'
+  alias: Cyrkulacja wody on
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id: sensor.waterflowtemp
+    for:
+      hours: 0
+      minutes: 1
+      seconds: 0
+    below: 30
+  condition:
+  - condition: time
+    after: 06:00:00
+    before: '23:00:00'
+  action:
+  - service: switch.turn_on
+    entity_id: switch.waterflow
+  mode: single
+- id: '1671558345744'
+  alias: Cyrkulacja wody - off
+  description: Cyrkulacja wody - off
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.waterflow
+    to: 'on'
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+  condition: []
+  action:
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.waterflow
+  mode: single
