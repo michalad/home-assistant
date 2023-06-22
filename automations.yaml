@@ -1,21 +1,21 @@
-- alias: Wylacz oswietlenie front
+- id: 07f71155089c4000b255bf024777c65c
+  alias: Wylacz oswietlenie front
   trigger:
-  - at: '22:00'
+  - at: '23:33:00'
     platform: time
   condition: []
   action:
-    entity_id: light.gateway2light11
+  - entity_id: light.gateway2light11
     service: light.turn_off
-  id: 07f71155089c4000b255bf024777c65c
-- alias: Wlacz oswietlenie front
+- id: 450499f85e2142e79a8bde6924cc0f7d
+  alias: Wlacz oswietlenie front
   trigger:
-  - at: '19:00'
+  - at: '22:00:00'
     platform: time
   condition: []
   action:
-    entity_id: light.gateway2light11
+  - entity_id: light.gateway2light11
     service: light.turn_on
-  id: 450499f85e2142e79a8bde6924cc0f7d
 - alias: Włącz choinkę
   trigger:
   - platform: sun
@@ -83,6 +83,8 @@
       minutes: 1
       seconds: 0
     below: 30
+  - platform: time
+    at: 06:30:00
   condition:
   - condition: time
     after: 06:00:00
@@ -101,7 +103,7 @@
     to: 'on'
     for:
       hours: 0
-      minutes: 5
+      minutes: 10
       seconds: 0
   condition: []
   action:
