@@ -1,7 +1,7 @@
     title: Ogólne
     badges: []
     cards:
-      - entity: weather.openweathermap
+      - entity: weather.dom
         type: weather-forecast
         name: Pogoda w Miechowie 
       - entity: camera.kamera_wjazd_main
@@ -16,17 +16,17 @@
         type: picture-entity
         show_name: false
         show_state: false 
-      - entity: sensor.pv_outputpower
+      - entity: sensor.inverter_gw12kn_dt
         type: gauge
         min: 0
         max: 12000
         name: Fotowoltaika - aktualna produkcja
       - entities:
-        - entity: sensor.pv_outputpower
+        - entity: sensor.inverter_gw12kn_dt
           name: Aktualna produkcja
-        - entity: sensor.pv_eday
+        - entity: sensor.inverter_gw12kn_dt_energy_today
           name: Wyprodukowano dzisiaj
-        - entity: sensor.pv_etotal
+        - entity: sensor.inverter_gw12kn_dt_energy
           name: Całkowita produkcja
         title: Fotowoltaika
         type: entities

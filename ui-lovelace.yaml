@@ -2,6 +2,7 @@ title: Nasz dom
 views:
   - !include ui/main.yaml
   - !include ui/ground.yaml
+  - !include ui/salon.yaml
   - !include ui/first-floor.yaml
 
   
