@@ -1,0 +1,114 @@
+title: Salon
+path: salon
+icon: mdi:sofa
+cards:
+  - type: vertical-stack
+    cards:
+      - type: picture-elements
+        image: /local/salon/salon_base.png?v=1
+        elements:
+          # --- poświata zapalonych obwodów (nie przechwytuje kliknięć) ---
+          - type: image
+            entity: light.gateway2light7
+            image: /local/salon/transparent.png
+            state_image:
+              "on": /local/salon/salon_1.png?v=1
+              "off": /local/salon/transparent.png
+            tap_action: { action: none }
+            hold_action: { action: none }
+            style: { top: 50%, left: 50%, width: 100%, pointer-events: none }
+          - type: image
+            entity: light.gateway2light8
+            image: /local/salon/transparent.png
+            state_image:
+              "on": /local/salon/salon_2.png?v=1
+              "off": /local/salon/transparent.png
+            tap_action: { action: none }
+            hold_action: { action: none }
+            style: { top: 50%, left: 50%, width: 100%, pointer-events: none }
+          - type: image
+            entity: light.gateway2light21
+            image: /local/salon/transparent.png
+            state_image:
+              "on": /local/salon/salon_3.png?v=1
+              "off": /local/salon/transparent.png
+            tap_action: { action: none }
+            hold_action: { action: none }
+            style: { top: 50%, left: 50%, width: 100%, pointer-events: none }
+          - type: image
+            entity: light.gateway2light14
+            image: /local/salon/transparent.png
+            state_image:
+              "on": /local/salon/salon_4.png?v=1
+              "off": /local/salon/transparent.png
+            tap_action: { action: none }
+            hold_action: { action: none }
+            style: { top: 50%, left: 50%, width: 100%, pointer-events: none }
+
+          # --- przyciski na planie: tap = włącz/wyłącz, przytrzymanie = szczegóły ---
+          - type: state-icon
+            entity: light.gateway2light7   # obwód 1 – oczka w pasie sufitu
+            icon: mdi:light-recessed
+            tap_action: { action: toggle }
+            hold_action: { action: more-info }
+            style: { top: 50.2%, left: 77.5%, "--mdc-icon-size": 30px, background: "rgba(0,0,0,0.55)", border-radius: 50% }
+          - type: state-icon
+            entity: light.gateway2light8   # obwód 2 – oczka nad sofą
+            icon: mdi:light-recessed
+            tap_action: { action: toggle }
+            hold_action: { action: more-info }
+            style: { top: 50.2%, left: 53.3%, "--mdc-icon-size": 30px, background: "rgba(0,0,0,0.55)", border-radius: 50% }
+          - type: state-icon
+            entity: light.gateway2light21  # obwód 3 – lampa liniowa nad stołem
+            icon: mdi:vanity-light
+            tap_action: { action: toggle }
+            hold_action: { action: more-info }
+            style: { top: 23.7%, left: 53.2%, "--mdc-icon-size": 30px, background: "rgba(0,0,0,0.55)", border-radius: 50% }
+          - type: state-icon
+            entity: light.gateway2light14  # obwód 4 – lampy wiszące przy oknach (góra)
+            icon: mdi:ceiling-light-multiple
+            tap_action: { action: toggle }
+            hold_action: { action: more-info }
+            style: { top: 25.0%, left: 27.9%, "--mdc-icon-size": 30px, background: "rgba(0,0,0,0.55)", border-radius: 50% }
+          - type: state-icon
+            entity: light.gateway2light14  # obwód 4 – lampy wiszące przy oknach (dół)
+            icon: mdi:ceiling-light-multiple
+            tap_action: { action: toggle }
+            hold_action: { action: more-info }
+            style: { top: 69.4%, left: 27.9%, "--mdc-icon-size": 30px, background: "rgba(0,0,0,0.55)", border-radius: 50% }
+
+          - type: service-button
+            title: Wyłącz wszystko
+            action: light.turn_off
+            data:
+              entity_id:
+                - light.gateway2light7
+                - light.gateway2light8
+                - light.gateway2light21
+                - light.gateway2light14
+            style: { top: 96.5%, left: 82%, color: "#fff" }
+
+      - type: grid
+        columns: 2
+        square: false
+        cards:
+          - type: tile
+            entity: light.gateway2light7
+            name: Oczka – pas sufitu
+            icon: mdi:light-recessed
+            tap_action: { action: toggle }
+          - type: tile
+            entity: light.gateway2light8
+            name: Oczka nad sofą
+            icon: mdi:light-recessed
+            tap_action: { action: toggle }
+          - type: tile
+            entity: light.gateway2light21
+            name: Lampa nad stołem
+            icon: mdi:vanity-light
+            tap_action: { action: toggle }
+          - type: tile
+            entity: light.gateway2light14
+            name: Lampy wiszące
+            icon: mdi:ceiling-light-multiple
+            tap_action: { action: toggle }

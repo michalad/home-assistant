@@ -1,0 +1,19 @@
+otworz_drzwi:
+  alias: Otwórz drzwi (domofon)
+  icon: mdi:door-open
+  mode: single
+  sequence:
+    - action: button.press
+      target:
+        entity_id: button.7f076a8pajc4850_open_door
+
+otworz_brame:
+  alias: Otwórz bramę (domofon)
+  icon: mdi:gate-open
+  mode: single
+  sequence:
+    - action: dahua.vto_open_door
+      target:
+        entity_id: camera.7f076a8pajc4850_main
+      data:
+        door_id: 2

@@ -141,3 +141,57 @@
       entity_id:
       - light.gateway2light4
   mode: single
+- id: brama_furtka_oswietlenie_front
+  alias: Brama/furtka otwarta - oświetlenie front na 5 min
+  description: >-
+    Po zmroku, gdy brama lub furtka zostanie otwarta przez domofon Dahua (panel,
+    DMSS, karta/kod albo przyciski w HA), włącza Elewację front na 5 minut.
+    Nie robi nic, jeśli światło było już włączone. Kolejne otwarcie w trakcie
+    tych 5 minut liczy czas od nowa. Otwarcia pilotem nie są wykrywane
+    (brak czujnika na bramie).
+  mode: restart
+  triggers:
+    - trigger: event
+      event_type: dahua_event_received
+      event_data:
+        Code: AccessControl
+        DeviceName: 7F076A8PAJC4850
+      id: domofon
+    - trigger: state
+      entity_id:
+        - script.otworz_brame
+        - script.otworz_drzwi
+      to: 'on'
+      id: ha
+  conditions:
+    - condition: state
+      entity_id: sun.sun
+      state: below_horizon
+    - condition: template
+      value_template: >-
+        {{ trigger.id != 'domofon'
+           or (trigger.event.data.data | default({})).get('Name') == 'OpenDoor' }}
+    # Światło musi być zgaszone, chyba że to ta automatyzacja je zapaliła
+    # (wtedy kolejne otwarcie tylko przedłuża czas).
+    - condition: template
+      value_template: >-
+        {{ is_state('light.gateway2light11', 'off')
+           or (this.attributes.current | default(0) | int) > 0 }}
+  actions:
+    - action: light.turn_on
+      target:
+        entity_id: light.gateway2light11
+    - delay: '00:05:00'
+    # Nie gasimy, jeśli w międzyczasie zaczęło się stałe świecenie
+    # (automatyzacja "Wlacz oswietlenie front": zachód +30 min do zachód +3:30).
+    - if:
+        - condition: sun
+          after: sunset
+          after_offset: '00:30:00'
+          before: sunset
+          before_offset: '03:30:00'
+      then: []
+      else:
+        - action: light.turn_off
+          target:
+            entity_id: light.gateway2light11
