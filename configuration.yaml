@@ -22,11 +22,17 @@ homeassistant:
       assumed_state: false
 
 lovelace:
-  mode: yaml
+  resource_mode: yaml
   resources:
-    - url: /local/community/vacuum-card/vacuum-card.js
+    - url: /local/vacuum-card.js
       type: module
   dashboards:
+    lovelace:
+      mode: yaml
+      filename: ui-lovelace.yaml
+      title: Nasz dom
+      icon: mdi:view-dashboard
+      show_in_sidebar: true
     lovelace-yaml:
       mode: yaml
       title: Ogrzewanie
@@ -55,15 +61,6 @@ mqtt:
   light: !include light.yaml
   sensor: !include sensor-mqtt.yaml
   switch: !include switch.yaml
-
-influxdb:
-  api_version: 2
-  host: 192.168.100.151
-  ssl: false
-  token: !secret influx
-  organization: homeassistant
-  bucket: home_assistant
-  port: 8086
 
 logger:
   default: info
