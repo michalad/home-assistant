@@ -5,10 +5,6 @@ default_config:
 tts:
   - platform: google_translate
 
-weather:
-  - platform: openweathermap
-    api_key: !secret openweathermap_password
-
 homeassistant:
   name: Nasz Dom
   latitude: 50.348172
@@ -41,7 +37,6 @@ lovelace:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
-sensor: !include sensor.yaml
 climate: !include climate.yaml
 
 
