@@ -1,8 +1,9 @@
 - id: 07f71155089c4000b255bf024777c65c
   alias: Wylacz oswietlenie front
   trigger:
-  - at: '23:33:00'
-    platform: time
+  - platform: sun
+    event: sunset
+    offset: 03:30:00
   condition: []
   action:
   - entity_id: light.gateway2light11
@@ -10,8 +11,9 @@
 - id: 450499f85e2142e79a8bde6924cc0f7d
   alias: Wlacz oswietlenie front
   trigger:
-  - at: '22:00:00'
-    platform: time
+  - platform: sun
+    event: sunset
+    offset: 00:30:00
   condition: []
   action:
   - entity_id: light.gateway2light11
@@ -111,4 +113,31 @@
     data: {}
     target:
       entity_id: switch.waterflow
+  mode: single
+- id: '1703244792254'
+  alias: Wlacz kilniety
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+  condition: []
+  action:
+  - service: light.turn_on
+    data: {}
+    target:
+      entity_id: light.gateway2light4
+  mode: single
+- id: '1703244854499'
+  alias: Wylacz kinkiety
+  description: ''
+  trigger:
+  - platform: time
+    at: '23:59:59'
+  condition: []
+  action:
+  - service: light.turn_off
+    data: {}
+    target:
+      entity_id:
+      - light.gateway2light4
   mode: single
